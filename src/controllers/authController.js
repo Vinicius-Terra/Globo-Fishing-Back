@@ -61,3 +61,13 @@ export async function getAllFishes(req, res) {
   }
 }
 
+export async function test(req, res) {
+  
+  try {
+	res.send("oi").status(200);
+  }
+  catch (error) {
+    res.status(500).send(error);
+  }
+}
+
