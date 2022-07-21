@@ -9,6 +9,6 @@ app.use(express.json());
 
 app.use(router);
 
-app.listen(process.env.PORT, () => {
-    console.log(`Server is litening on port ${process.env.PORT}.`);
+app.listen(process.env.PORT|| 5000, () => {
+    console.log(`Server is runing.`);
 });
